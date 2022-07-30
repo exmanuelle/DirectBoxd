@@ -1,0 +1,10 @@
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/directboxd?useTimezone=true&serverTimezone=UTC&useLegacyDate
+    username: postgres
+    password: slinda
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
