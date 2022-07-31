@@ -11,7 +11,7 @@ public interface IContaService {
 
     Conta get(Long id);
 
-    List<Conta> getAll();
+    List<Conta> getAll(String usuario);
 
     Conta update(Long id,ContaForm formUpdate);
 
