@@ -1,4 +1,12 @@
 package me.dio.directors.directboxd.repository;
 
-public interface DiretorRepository {
+import me.dio.directors.directboxd.entity.Diretor;
+import me.dio.directors.directboxd.service.IDiretorService;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface DiretorRepository extends JpaRepository<Diretor, Long> {
+
+
 }
