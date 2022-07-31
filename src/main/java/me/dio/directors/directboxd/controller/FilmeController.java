@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
+
 @RestController
 @RequestMapping("/filmes")
 public class FilmeController {
@@ -16,7 +18,7 @@ public class FilmeController {
     private FilmeServiceImpl service;
 
     @PostMapping
-    public Filme create (@RequestBody FilmeForm form){
+    public Filme create (@Valid @RequestBody FilmeForm form){
         return service.create(form);
     }
 
